@@ -418,7 +418,7 @@ plt.tight_layout()
 plt.show()
 ```
 ![Side view of aligned disk (Y′Z′)](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/4.3%20Photo%20Y'Z'%20aligned%20axis%20section%207.png?raw=true)
-*Figure: Side view of aligned galactic disk (Y′Z′*
+*Figure: Side view of aligned galactic disk (Y′Z′ projection).*
 
 
 
