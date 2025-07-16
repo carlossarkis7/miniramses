@@ -241,7 +241,8 @@ These views reveal increasing detail — from the overall shape to disk asymmetr
 
 ---
 
-![Zoomed Galaxy View](images/zoomed_galaxy_step5.png)  
+![Zoomed-in XY view of the galaxy](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/2.2%20Photo%20XY%20zoomed%2050%20times%20section%205.png?raw=true)
+*Figure: Zoomed-in XY view of the galaxy from Step 5.*
 *Figure: Progressive zoom into the galaxy revealing increasing structural detail.*
 
 
@@ -260,19 +261,25 @@ The `visu()` function can display any 2D projection of the data by changing the 
 ```python
 visu(x, y, dx, rho, log=1, cmap='inferno')
 ```
-*Placeholder: XY projection image*
+![XY view zoomed 100x](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/3.1%20Photo%20XY%20zoomed%20100%20times%20section%206.png?raw=true)
+*Figure: Face-on (XY) view of the galaxy zoomed 100×.*
+
 
 - **XZ Plane (side view):**
 ```python
 visu(x, z, dx, rho, log=1, cmap='inferno')
 ```
-*Placeholder: XZ projection image*
+![XZ view zoomed 100x](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/3.2%20Photo%20XZ%20zoomed%20100%20times%20section%206.png?raw=true)
+*Figure: Side (XZ) view of the galaxy zoomed 100×.*
+
 
 - **YZ Plane (side view from another angle):**
 ```python
 visu(y, z, dx, rho, log=1, cmap='inferno')
 ```
-*Placeholder: YZ projection image*
+![YZ view zoomed 100x](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/3.3%20Photo%20YZ%20zoomed%20100%20times%20section%206.png?raw=true)
+*Figure: Side (YZ) view of the galaxy zoomed 100×.*
+
 
 All views are displayed using:
 
@@ -395,7 +402,9 @@ plt.colorbar(label="log Density")
 plt.tight_layout()
 plt.show()
 ```
-*Placeholder: Top-down disk image (x′–y′)*
+![Face-on view of aligned disk (X′Y′)](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/4.1%20Photo%20X'Y'%20aligned%20axis%20section%207.png?raw=true)
+*Figure: Face-on view of aligned galactic disk (X′Y′ projection).*
+
 
 #### Disk Side View (y′–z′)
 ```python
@@ -408,7 +417,10 @@ plt.colorbar(label="log Density")
 plt.tight_layout()
 plt.show()
 ```
-*Placeholder: Side view of disk (y′–z′ projection)*
+![Side view of aligned disk (Y′Z′)](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/4.3%20Photo%20Y'Z'%20aligned%20axis%20section%207.png?raw=true)
+*Figure: Side view of aligned galactic disk (Y′Z′*
+
+
 
 #### Disk Edge/Profile View (x′–z′)
 ```python
@@ -421,6 +433,8 @@ plt.colorbar(label="log Density")
 plt.tight_layout()
 plt.show()
 ```
-*Placeholder: Edge-on view of disk (x′–z′ projection)*
+![Edge-on view of aligned disk (X′Z′)](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/4.2%20Photo%20X'Z'%20aligned%20axis%20section%207.png?raw=true)
+*Figure: Edge-on view of aligned galactic disk (X′Z′ projection).*
+
 
 
