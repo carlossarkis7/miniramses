@@ -1,5 +1,4 @@
-## Step 1  
-### 1. Project Goals
+## Step 1: Project Goals
 
 The main objective of this project is to develop a clean and reusable Python-based workflow for analyzing galaxy simulation data produced by the **RAMSES** code.
 
@@ -13,14 +12,13 @@ Specifically, the goals are to:
 - Build a step-by-step, well-documented process that could be reused in similar research contexts.
 
 
-## Step 2  
-### 2. Setting Up the Environment
+## Step 2: Setting Up the Environment
 
 Before working with the RAMSES simulation data, the first step is to prepare the coding environment and ensure access to the necessary tools and files.
 
 ---
 
-### Installing Git
+### 2.1 Installing Git
 
 Git is a version control system that allows you to track changes in your code, collaborate with others, and download ("clone") complete project repositories from the internet. It is widely used in software development and scientific computing.
 
@@ -34,7 +32,7 @@ To install Git on Windows:
 
 ---
 
-### Creating a Project Folder and Opening Git Bash
+### 2.2 Creating a Project Folder and Opening Git Bash
 
 1. Choose or create a folder on your computer where you want to store all files for this project (e.g., `GalaxyProjectSummer2025`).  
 2. Navigate to that folder in Windows Explorer.  
@@ -42,7 +40,7 @@ To install Git on Windows:
 
 ---
 
-### Cloning the Mini-RAMSES Repository
+### 2.3 Cloning the Mini-RAMSES Repository
 
 In the Git Bash terminal, run:
 
@@ -54,7 +52,7 @@ This command creates a local copy of the Mini-RAMSES codebase in a folder named 
 
 ---
 
-### Downloading and Extracting the Simulation Data
+### 2.4 Downloading and Extracting the Simulation Data
 
 1. Download the file `output_00011.tar` from the link provided by Professor Teyssier.  
 2. Move the file into your project folder.  
@@ -66,7 +64,7 @@ tar xvf output_00011.tar
 
 ---
 
-### Python Environment Setup
+### 2.5 Python Environment Setup
 
 - Ensure Python (version 3.8 or higher) is installed on your computer.  
 - Install required Python libraries:
@@ -79,7 +77,7 @@ pip install numpy matplotlib
 
 ---
 
-### Final Project Structure
+### 2.6 Final Project Structure
 
 At this stage, your project folder should include:
 
@@ -88,14 +86,13 @@ At this stage, your project folder should include:
 - Your own script(s) or Jupyter notebooks for visualization  
 
 
-## Step 3  
-### 3. Loading and Exploring the Data
+## Step 3: Loading and Exploring the Data
 
 Once the environment has been set up and the simulation data extracted, the next step is to load the data into Python and explore the galaxy's structure.
 
 ---
 
-### Loading the AMR Cell Data
+### 3.1 Loading the AMR Cell Data
 
 RAMSES simulations divide space into **adaptive mesh refinement (AMR)** cells. To load the data for output number 11:
 
@@ -117,7 +114,7 @@ print(data.u[0].min(), data.u[0].max())  # Density range
 
 ---
 
-### Loading the Clump Catalog
+### 3.2 Loading the Clump Catalog
 
 To identify individual dark matter clumps (e.g., halos), use the function:
 
@@ -141,14 +138,13 @@ center_coords = clumps["pos"][index]
 This `center_coords` value is later used to center the visualization on the main galaxy.
 
 
-## Step 4  
-### 4. Generating Visualizations
+## Step 4: Generating Visualizations
 
 Once the data has been successfully loaded and the main clump identified, the next step is to visualize the galaxy using the tools provided in the Mini-RAMSES codebase.
 
 ---
 
-### Using the `visu()` Function
+### 4.1 Using the `visu()` Function
 
 Mini-RAMSES includes a custom visualization function called `visu()` defined in `miniramses.py`. It can be used to create 2D projections of physical quantities (like density) in any plane.
 
@@ -176,14 +172,13 @@ Once this is done, the first image of the galaxy should successfully appear.
 *Figure: Initial XY-plane projection of the galaxy using the `visu()` function*
 
 
-## Step 5  
-### 5. Zooming into the Galaxy
+## Step 5: Zooming into the Galaxy
 
 After generating an initial wide-field view of the simulation, the next step is to zoom in on the central galaxy. This allows for a more detailed analysis of its internal structure.
 
 ---
 
-### Focusing on the Most Massive Clump
+### 5.1 Focusing on the Most Massive Clump
 
 Using the coordinates of the most massive clump identified in Step 3 (`center_coords`), a zoomed-in region can be extracted using `rd_cell()`:
 
@@ -196,7 +191,7 @@ c = rd_cell(11, path=output_path, center=center_coords, radius=0.005)
 
 ---
 
-### Extracting Physical Fields
+### 5.2 Extracting Physical Fields
 
 The `rd_cell()` function returns a data object containing all the physical quantities within the zoomed region. From it, we extract:
 
@@ -222,7 +217,7 @@ These fields will later be used to compute properties like angular momentum and 
 
 ---
 
-### Exploring Different Zoom Levels
+### 5.3 Exploring Different Zoom Levels
 
 The `radius` parameter in `rd_cell()` can be varied to explore the structure at different scales:
 
@@ -245,14 +240,13 @@ These views reveal increasing detail — from the overall shape to disk asymmetr
 *Figure: Progressive zoom into the galaxy revealing increasing structural detail.*
 
 
-## Step 6  
-### 6. Multi-Angle Visualization
+## Step 6: Multi-Angle Visualization
 
 After zooming in on the galaxy, the next step is to explore its three-dimensional structure by visualizing it in different planes. This allows for a clearer understanding of the galaxy's shape, orientation, and vertical structure.
 
 ---
 
-### Changing the Projection Plane
+### 6.1 Changing the Projection Plane
 
 The `visu()` function can display any 2D projection of the data by changing the first two spatial coordinates passed to it. Using the extracted variables from Step 5, different views can be generated:
 
@@ -300,15 +294,13 @@ These comparisons are essential for assessing how well-aligned the galaxy is wit
 
 
 
-# Step 7
-
-## 7. Aligning the Disk with the Coordinate Axes
+# Step 7: Aligning the Disk with the Coordinate Axes
 
 After visualizing the galaxy in multiple planes, it becomes clear that the disk is not perfectly aligned with the simulation box. To create consistent, interpretable visualizations, the galaxy must be rotated so that its disk lies flat in the XY plane, with its angular momentum vector pointing along the z-axis.
 
 ---
 
-### Step 1: Center the Data Around the Clump
+### 7.1 Center the Data Around the Clump
 
 First, all cell positions are shifted so that the center of the most massive clump is at the origin:
 
@@ -319,7 +311,7 @@ vx0, vy0, vz0 = vx, vy, vz  # velocities are already relative to the clump
 
 ---
 
-### Step 2: Calculate the Angular Momentum Vector
+### 7.2 Calculate the Angular Momentum Vector
 
 The angular momentum vector is computed explicitly from the positions, velocities, and mass of each AMR cell:
 
@@ -338,7 +330,7 @@ This vector is perpendicular to the plane of the disk and will define the new z-
 
 ---
 
-### Step 3: Build and Apply the Rotation
+### 7.3 Build and Apply the Rotation
 
 An orthonormal basis is constructed using the angular momentum direction:
 
@@ -363,7 +355,7 @@ x1, y1, z1 = rotated[0], rotated[1], rotated[2]
 
 ---
 
-### Step 4: Visualize the Aligned Galaxy with `visu()`
+### 7.4 Visualize the Aligned Galaxy with `visu()`
 
 After rotation, the disk lies in the new XY′ plane. Visualizations confirm the alignment:
 
@@ -386,7 +378,7 @@ plt.show()
 
 ---
 
-### Step 5: Visualizing the Disk from Multiple Angles (Hexbin View)
+### 7.5 Visualizing the Disk from Multiple Angles (Hexbin View)
 
 To enhance visual clarity, hexbin plots are used to inspect the aligned galaxy in all three planes:
 
