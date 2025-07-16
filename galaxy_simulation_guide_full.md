@@ -172,7 +172,7 @@ Once this is done, the first image of the galaxy should successfully appear.
 
 ---
 
-![Galaxy Visualization](images/galaxy_visualization_step4.png)  
+https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/1.3%20Photo%20initial%20YZ%20not%20zoomed%20section%204.png
 *Figure: Initial XY-plane projection of the galaxy using the `visu()` function.*
 
 
