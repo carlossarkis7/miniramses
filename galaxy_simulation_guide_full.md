@@ -242,7 +242,6 @@ These views reveal increasing detail — from the overall shape to disk asymmetr
 ---
 
 ![Zoomed-in XY view of the galaxy](https://github.com/carlossarkis7/miniramses/blob/carlossarkis7-2025project/2.2%20Photo%20XY%20zoomed%2050%20times%20section%205.png?raw=true)
-*Figure: Zoomed-in XY view of the galaxy from Step 5.*
 *Figure: Progressive zoom into the galaxy revealing increasing structural detail.*
 
 
