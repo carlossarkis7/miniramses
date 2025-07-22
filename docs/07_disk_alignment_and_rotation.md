@@ -14,11 +14,11 @@ First, all cell positions are shifted so that the center of the most massive clu
 
 ```python
 x0, y0, z0 = x - x_c, y - y_c, z - z_c
+
+# Next, subtract the clump’s velocity from each component so that velocities are measured in the clump’s rest frame.
 vx0 = vx - vx_c
 vy0 = vy - vy_c
 vz0 = vz - vz_c  # subtract clump velocity components
-
-```
 
 ---
 
