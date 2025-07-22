@@ -33,7 +33,7 @@ The full guide is divided into sections available in the [`docs/`](docs) folder:
 *Figure: Initial YZ-plane projection of the galaxy using the `visu()` function*
 
 
-![Aligned galactic disk (X′Y′)](./4.1%20Photo%20X'Y'%20aligned%20axis%20section%207.png)  
+![Aligned galactic disk (X′Y′)](images/4.1%20Photo%20X'Y'%20aligned%20axis%20section%207.png)  
 *Aligned galactic disk after angular momentum rotation*
 
 ---
