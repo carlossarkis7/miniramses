@@ -20,9 +20,10 @@ The full guide is divided into sections available in the [`docs/`](docs) folder:
 1. [Step 1 – Project Goals](docs/01_intro_goals.md)  
 2. [Step 2 – Setting Up the Environment](docs/02_environment_setup.md)  
 3. [Step 3 – Loading and Exploring the Data](docs/03_data_loading.md)  
-4. [Step 4 & 5 – Visualization & Zooming In](docs/04_visualization.md)  
-5. [Step 6 – Multi-Angle Visualization](docs/06_multi_angle_visualization.md)  
-6. [Step 7 – Disk Alignment and Rotation (Advanced)](docs/07_disk_alignment_and_rotation.md)
+4. [Step 4 – Initial Visualization](docs/04_visualization.md)  
+5. [Step 5 – Zooming into the Galaxy](docs/05_zooming.md)  
+6. [Step 6 – Multi-Angle Visualization](docs/06_multi_angle_visualization.md)  
+7. [Step 7 – Disk Alignment and Rotation (Advanced)](docs/07_disk_alignment_and_rotation.md)
 
 ---
 
