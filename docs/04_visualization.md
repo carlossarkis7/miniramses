@@ -14,7 +14,7 @@ A typical usage:
 from miniramses import visu
 import matplotlib.pyplot as plt
 
-visu(data.x[0], data.x[1], data.dx, data.u[0], log=1, vmin=-6, vmax=2, cmap='inferno')
+visu(data.x[0], data.x[1], data.dx, data.u[0], log=1, vmin=-6, vmax=2, cmap='inferno', sort=data.u[0])
 plt.show()
 ```
 
