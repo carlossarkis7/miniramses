@@ -29,8 +29,9 @@ The full guide is divided into sections available in the [`docs/`](docs) folder:
 
 ## Example Outputs
 
-![XY-plane zoom of central galaxy](images/3.1%20Photo%20XY%20zoomed%20100%20times%20section%206.png)
-*XY-plane zoom on the central region of the galaxy*
+![Initial YZ-plane projection of the galaxy](images/1.3%20Photo%20initial%20YZ%20not%20zoomed%20section%204.png)
+*Figure: Initial YZ-plane projection of the galaxy using the `visu()` function*
+
 
 ![Aligned galactic disk (X′Y′)](./4.1%20Photo%20X'Y'%20aligned%20axis%20section%207.png)  
 *Aligned galactic disk after angular momentum rotation*
