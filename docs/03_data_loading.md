@@ -9,10 +9,10 @@ Once the environment has been set up and the simulation data extracted, the next
 RAMSES simulations divide space into **adaptive mesh refinement (AMR)** cells. To load the data for output number 11:
 
 ```python
-from miniramses import load_cell
+from miniramses import rd_cell
 
 output_path = "C:/path/to/project"  # replace with your actual path
-data = load_cell(11, path=output_path)
+data = rd_cell(11, path=output_path)
 ```
 
 This command loads all the AMR cells from `output_00011`, including positions (`data.x`), sizes (`data.dx`), and physical quantities like density (`data.u[0]`).
