@@ -1,5 +1,9 @@
 # Step 7: Aligning the Disk with the Coordinate Axes
 
+> ⚠️ **Advanced Section**  
+> This step involves more complex operations like angular momentum computation and coordinate rotation.  
+> It is intended for advanced users with a strong background in astrophysical simulation analysis.  
+
 After visualizing the galaxy in multiple planes, it becomes clear that the disk is not perfectly aligned with the simulation box. To create consistent, interpretable visualizations, the galaxy must be rotated so that its disk lies flat in the XY plane, with its angular momentum vector pointing along the z-axis.
 
 ---
