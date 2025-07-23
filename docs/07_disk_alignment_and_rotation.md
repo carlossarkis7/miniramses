@@ -74,7 +74,8 @@ After rotation, the disk lies in the new XY′ plane. Visualizations confirm the
 visu(x1, y1, dx, rho, log=1, cmap='inferno')
 plt.show()
 ```
-To improve the visual quality of the image, we can artificially increase the cell sizes and use the `make_image_2d()` function. This produces a smoother, more aesthetic representation of the disk by "blurring" nearby cells.
+
+To improve the appearance of the image, we can use the make_image_2d() function from miniramses. By artificially increasing the cell size using dx_factor, we simulate a smoothing effect that improves the visual clarity. This technique is especially helpful when the grid is very refined and produces noisy images.
 
 from miniramses import make_image_2d
 
@@ -98,12 +99,10 @@ plt.show()
 ```
 *Placeholder: Side views of aligned disk (XZ′ and YZ′ projections)*
 
-To improve the visual quality of the image, we can artificially increase the cell sizes and use the make_image_2d() function...
----
 
 ### 7.5 Visualizing the Disk from Multiple Angles (Hexbin View)
 
-To enhance visual clarity, hexbin plots are used to inspect the aligned galaxy in all three planes:
+Although the make_image_2d() approach is visually superior, hexbin plots can still be useful for density comparisons across projections:
 
 #### Disk Top View (x′–y′)
 ```python
