@@ -19,7 +19,7 @@ x0, y0, z0 = x - x_c, y - y_c, z - z_c
 vx0 = vx - vx_c
 vy0 = vy - vy_c
 vz0 = vz - vz_c  # subtract clump velocity components
-
+```
 ---
 
 ### 7.2 Calculate the Angular Momentum Vector
@@ -77,6 +77,7 @@ plt.show()
 
 To improve the appearance of the image, we can use the make_image_2d() function from miniramses. By artificially increasing the cell size using dx_factor, we simulate a smoothing effect that improves the visual clarity. This technique is especially helpful when the grid is very refined and produces noisy images.
 
+```
 from miniramses import make_image_2d
 
 img = make_image_2d(x1, y1, rho, dx_factor=10)
@@ -85,6 +86,7 @@ plt.colorbar(label='log Density')
 plt.title("Smoothed Disk View (XY′ plane)")
 plt.tight_layout()
 plt.show()
+```
 
 *Placeholder: Face-on view of aligned disk (XY′ projection)*
 
