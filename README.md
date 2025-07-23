@@ -40,10 +40,11 @@ The full guide is divided into sections available in the [`docs/`](docs) folder:
 
 ## Author and Acknowledgments
 
-This project was developed by Carlos Sarkis as part of a supervised research project during the summer of 2025 under the direct guidance of Professor Romain Teyssier.
+This project was developed by Carlos Sarkis as part of a supervised research initiative during the summer of 2025, under the direct mentorship of Professor Romain Teyssier.
 
-All development, analysis, and documentation were carried out as part of this work, with Professor Teyssier providing both the scientific context and ongoing supervision throughout the project. The Mini-RAMSES codebase served as the foundation for the data analysis and visualization pipeline.
+Professor Teyssier is a globally recognized expert in computational astrophysics, and a full professor at Princeton University. His research spans a wide range of areas in theoretical astrophysics, including galaxy formation and evolution, cosmological simulations, and numerical methods for magnetohydrodynamics. He is also the original author of RAMSES, a pioneering Adaptive Mesh Refinement (AMR) code that has become a reference tool in large-scale structure and galactic dynamics research.
 
+All simulation analysis, data processing, and visualization documented in this repository were conducted by the author under Professor Teyssier’s scientific supervision, as part of a focused project on galaxy-scale structure and dynamics using the Mini-RAMSES framework.
 
 ---
 
