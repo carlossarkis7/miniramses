@@ -19,7 +19,7 @@ x0, y0, z0 = x - x_c, y - y_c, z - z_c
 vx0 = vx - vx_c
 vy0 = vy - vy_c
 vz0 = vz - vz_c  # subtract clump velocity components
-```
+
 ---
 
 ### 7.2 Calculate the Angular Momentum Vector
@@ -75,10 +75,8 @@ visu(x1, y1, dx, rho, log=1, cmap='inferno')
 plt.show()
 ```
 
-To improve the appearance of the image, we can use the make_image_2d() function from miniramses.
-As suggested by Professor Teyssier, one useful trick is to "hack" the refinement by artificially increasing the cell sizes using the dx_factor parameter. This makes nearby cells appear larger and produces a smoothed, more visually pleasing image — particularly helpful when the original grid is very refined and appears noisy.
+To improve the appearance of the image, we can use the make_image_2d() function from miniramses. By artificially increasing the cell size using dx_factor, we simulate a smoothing effect that improves the visual clarity. This technique is especially helpful when the grid is very refined and produces noisy images.
 
-```python
 from miniramses import make_image_2d
 
 img = make_image_2d(x1, y1, rho, dx_factor=10)
@@ -87,11 +85,8 @@ plt.colorbar(label='log Density')
 plt.title("Smoothed Disk View (XY′ plane)")
 plt.tight_layout()
 plt.show()
-```
 
-*Placeholder: Smoothed face-on view of aligned disk (XY′ projection)
-
-
+*Placeholder: Face-on view of aligned disk (XY′ projection)*
 
 Side views were also inspected:
 
