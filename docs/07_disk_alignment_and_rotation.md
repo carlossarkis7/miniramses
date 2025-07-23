@@ -74,6 +74,17 @@ After rotation, the disk lies in the new XY′ plane. Visualizations confirm the
 visu(x1, y1, dx, rho, log=1, cmap='inferno')
 plt.show()
 ```
+To improve the visual quality of the image, we can artificially increase the cell sizes and use the `make_image_2d()` function. This produces a smoother, more aesthetic representation of the disk by "blurring" nearby cells.
+
+from miniramses import make_image_2d
+
+img = make_image_2d(x1, y1, rho, dx_factor=10)
+plt.imshow(np.log10(img + 1e-6), origin='lower', cmap='inferno')
+plt.colorbar(label='log Density')
+plt.title("Smoothed Disk View (XY′ plane)")
+plt.tight_layout()
+plt.show()
+
 *Placeholder: Face-on view of aligned disk (XY′ projection)*
 
 Side views were also inspected:
@@ -87,6 +98,7 @@ plt.show()
 ```
 *Placeholder: Side views of aligned disk (XZ′ and YZ′ projections)*
 
+To improve the visual quality of the image, we can artificially increase the cell sizes and use the make_image_2d() function...
 ---
 
 ### 7.5 Visualizing the Disk from Multiple Angles (Hexbin View)
