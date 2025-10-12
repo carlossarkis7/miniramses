@@ -150,4 +150,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-*Placeholder: Face-on view of aligned disk (XY′ projection)*
+
